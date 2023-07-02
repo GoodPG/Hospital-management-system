@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxa.mapper.DrugMapper">
+    <insert id="insert" parameterType="com.gxa.entity.DrugInformation">
+        INSERT INTO t_druginformation(category,name,supplier,link,date,ps,status)
+        VALUES (#{category},#{name},#{supplier},#{link},#{date},#{ps},#{status})
+    </insert>
+    <update id="update" >
+        UPDATE t_druginformation
+        SET status=0
+        WHERE id=#{id}
+    </update>
+    <select id="queryAll" resultType="com.gxa.entity.DrugInformation">
+        SELECT * FROM t_druginformation WHERE status=1
+    </select>
+    <select id="queryByName" resultType="com.gxa.entity.DrugInformation">
+        SELECT * FROM t_druginformation WHERE name like '%${search}%'
+    </select>
+</mapper>

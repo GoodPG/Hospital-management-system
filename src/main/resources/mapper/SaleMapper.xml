@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxa.mapper.SaleMapper">
+    <select id="queryAll" resultType="com.gxa.entity.sale">
+SELECT * FROM t_sale where status=1
+    </select>
+    <insert id="insert" parameterType="com.gxa.entity.sale">
+        INSERT INTO t_sale(sale_name,sale_time,sale_price,sale_leader,sale_remarks,status)
+        VALUES (#{sale_name},#{sale_time},#{sale_price},#{sale_leader},#{sale_remarks},#{status})
+    </insert>
+    <update id="update" >
+        UPDATE t_sale
+        SET status=0
+        WHERE id=#{id}
+    </update>
+
+
+
+</mapper>
