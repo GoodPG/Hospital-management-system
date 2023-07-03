@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxa.mapper.UserMapper">
+
+    <select id="queryByName" resultType="com.gxa.entity.User">
+        SELECT * FROM t_user WHERE name=#{name} AND status=1
+    </select>
+    <select id="insert" resultType="com.gxa.entity.User">
+        insert into t_user(name,pwd,status,phone) values (#{name},#{pwd},1,#{phone})
+    </select>
+    <select id="insert1" resultType="com.gxa.entity.User">
+        insert into t_user(name,status,phone,pwd1,status1) values (#{name},1,#{phone},#{pwd1},#{status1})
+    </select>
+    <select id="queryAll" resultType="com.gxa.entity.User">
+        SELECT * FROM t_user WHERE status1=1
+    </select>
+    <select id="queryByName1" resultType="com.gxa.entity.User">
+        SELECT * FROM t_user WHERE name like '%${search}%'
+    </select>
+    <select id="update" resultType="com.gxa.entity.User">
+        UPDATE t_user(pwd) set pwd=(#{pwd})
+    </select>
+    <update id="update1" >
+        UPDATE t_user
+        SET status1=0
+        WHERE id=#{id}
+    </update>
+    <select id="queryById" resultType="com.gxa.entity.User">
+        select * from t_user where id=#{id}
+    </select>
+    <update id="modify">
+        update t_user set pwd=#{new_pwd} where name=#{name}
+    </update>
+
+</mapper>

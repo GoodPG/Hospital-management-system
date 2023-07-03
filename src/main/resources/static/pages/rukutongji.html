@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Greendash Dashboard</title>
+    <!-- Iconic Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendors/iconic-fonts/flat-icons/flaticon.css">
+    <link rel="stylesheet" href="../vendors/iconic-fonts/cryptocoins/cryptocoins.css">
+    <link rel="stylesheet" href="../vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdn.bootstrapmb.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI -->
+    <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
+    <!-- Page Specific CSS (Slick Slider.css) -->
+    <link href="../assets/css/slick.css" rel="stylesheet">
+    <!-- Greendash styles -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+</head>
+
+<body class="ms-body ms-aside-left-open ms-primary-theme ">
+
+<!-- Overlays -->
+<div class="ms-aside-overlay ms-overlay-left ms-toggler" data-target="#ms-side-nav" data-toggle="slideLeft"></div>
+
+<!-- 大页面左边导航 -->
+<aside id="ms-side-nav" class="side-nav fixed ms-aside-scrollable ms-aside-left">
+    <!-- Logo -->
+    <div id="logo" class="logo-sn ms-d-block-lg">
+        <!-- logo的图片 -->
+        <a class="pl-0 ml-0 text-center" href="index.html"> <img src="../assets/img/logo.png" alt="logo">
+        </a>
+    </div>
+
+    <!-- 导航的一级菜单 -->
+    <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
+        <!-- Dashboard -->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#dashboard" aria-expanded="false"
+               aria-controls="dashboard">
+                <span><i class="material-icons fs-16">dashboard</i>药品管理</span>
+            </a>
+            <ul id="dashboard" class="collapse" aria-labelledby="dashboard" data-parent="#side-nav-accordion">
+                <li><a href="./gongyingshangxinxi.html">供应商信息管理</a></li>
+                <li><a href="./yaopinxinxi.html">药品信息管理</a></li>
+                <li><a href="./add_caigoudan.html">采购单添加</a></li>
+                <li><a href="./caigoumingxi.html">采购明细管理</a></li>
+            </ul>
+        </li>
+        <!--药品管理-->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#dashboard1" aria-expanded="false"
+               aria-controls="dashboard1">
+                <span><i class="material-icons fs-16">dashboard1</i>仪器管理</span>
+            </a>
+            <ul id="dashboard1" class="collapse" aria-labelledby="dashboard1" data-parent="#side-nav-accordion">
+                <li><a href="./gongyingshangxinxi1.html">供应商信息管理</a></li>
+                <li><a href="./yaopinxinxi1.html">仪器信息管理</a></li>
+                <li><a href="./add_caigoudan1.html">采购单添加</a></li>
+                <li><a href="./caigoumingxi1.html">采购明细管理</a></li>
+            </ul>
+        </li>
+        <!--仪器管理-->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#order-page" aria-expanded="false"
+               aria-controls="order-page">
+                <span><i class="fas fa-clipboard-list"></i>病人管理</span>
+            </a>
+            <ul id="order-page" class="collapse" aria-labelledby="order-page" data-parent="#side-nav-accordion">
+                <li><a href="./add_xiaoshoudan.html">病人信息添加</a></li>
+                <li><a href="./xiaoshoumingxi.html">病人信息统计</a></li>
+            </ul>
+        </li>
+        <!--病人管理-->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#product-page" aria-expanded="false"
+               aria-controls="product-page">
+                <span><i class="fas fa-cannabis"></i>病床统计管理</span>
+            </a>
+            <ul id="product-page" class="collapse" aria-labelledby="product-page" data-parent="#side-nav-accordion">
+                <li><a href="./rukutongji.html">病床使用信息添加</a></li>
+                <li><a href="./chukutongji.html">病床统计</a></li>
+            </ul>
+        </li>
+        <!--病床管理-->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#customer" aria-expanded="false"
+               aria-controls="customer">
+                <span><i class="fas fa-users"></i>员工管理</span>
+            </a>
+            <ul id="customer" class="collapse" aria-labelledby="customer" data-parent="#side-nav-accordion">
+                <li><a href="add_yuangong.html">员工添加</a></li>
+                <li><a href="./yuangongguanli.html">员工管理</a></li>
+                <li><a href="./queryStaff.html">员工查询</a></li>
+            </ul>
+        </li>
+        <!--员工管理-->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#customer1" aria-expanded="false"
+               aria-controls="customer1">
+                <span><i class="fas fa-users"></i>部门管理</span>
+            </a>
+            <ul id="customer1" class="collapse" aria-labelledby="customer1" data-parent="#side-nav-accordion">
+                <li><a href="add_yuangong1.html">部门更新</a></li>
+                <li><a href="./yuangongguanli1.html">部门删除</a></li>
+                <li><a href="./querydepartment.html">部门查询</a></li>
+            </ul>
+        </li>
+        <!--部门管理-->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#invoice" aria-expanded="false"
+               aria-controls="invoice">
+                <span><i class="fas fa-receipt"></i>打印管理</span>
+            </a>
+            <ul id="invoice" class="collapse" aria-labelledby="invoice" data-parent="#side-nav-accordion">
+                <li><a href="./ruKuDan.html">近期药品、仪器入库单</a></li>
+                <li><a href="./chuKuDan.html">近期药品、仪器出库单</a></li>
+            </ul>
+        </li>
+        <!--打印管理-->
+        <li class="menu-item">
+            <a href="#" class="has-chevron" data-toggle="collapse" data-target="#basic-elements" aria-expanded="false"
+               aria-controls="basic-elements">
+                <span><i class="material-icons fs-16">filter_list</i>系统管理</span>
+            </a>
+            <ul id="basic-elements" class="collapse" aria-labelledby="basic-elements" data-parent="#side-nav-accordion">
+                <li><a href="./xiuGaiMiMa.html">修改密码</a></li>
+            </ul>
+        </li>
+        <!--修改密码（管理员管理）-->
+    </ul>
+</aside>
+<!-- 主体页面内容 -->
+<main class="body-content">
+    <div id="app">
+        <!-- 主题页面顶部导航 -->
+        <nav class="navbar ms-navbar">
+            <div class="ms-aside-toggler ms-toggler pl-0" data-target="#ms-side-nav" data-toggle="slideLeft">
+                <span class="ms-toggler-bar bg-primary"></span>
+                <span class="ms-toggler-bar bg-primary"></span>
+                <span class="ms-toggler-bar bg-primary"></span>
+            </div>
+            <div class="logo-sn logo-sm ms-d-block-sm">
+                <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index.html"><img
+                        src="../assets/img/dashboard/greendash-logo-84x41.png" alt="logo"> </a>
+            </div>
+            <!-- 搜索 -->
+            <div style="display:flex;align-content:center;">
+                 <div style="line-height:60px;font-size: 18px;"><span id="loginSuName">{{username}}</span>,欢迎你</div>
+                 <div id="outLogin"><a href="javascript:void(0);"@click="logout">退出登录</a></div>
+            </div>
+
+
+        </nav>
+
+        <!-- 内容区域 -->
+        <div class="ms-content-wrapper">
+            <div class="row">
+                <!-- 分页标 -->
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb pl-0">
+                            <li class="breadcrumb-item"><a href="./index.html">首页</a></li>
+                            <li class="breadcrumb-item"><a href="./xiaoshoumingxi.html">病人信息统计</a></li>
+                            <li class="breadcrumb-item"><a href="./add_xiaoshoudan.html">病人信息添加</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-xl-6 col-md-12">
+                    <div class="ms-panel">
+                        <div class="ms-panel-header">
+                            <h6>添加病床信息</h6>
+                        </div>
+                        <div class="ms-panel-body">
+                            <form id="add_xsd" class="needs-validation" novalidate="">
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom01">病床编号</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="validationCustom01"
+                                                   placeholder="病床科室编号" name="danjuhao" value="" required="required" v-model="bc_name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom02">入住时间</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control datepicker" id="validationCustom02"
+                                                   placeholder="接诊时间" name="shijian" value="" v-model="bc_time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom03">病床价格</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="validationCustom03"
+                                                   placeholder="病床总额" name="zongjiage" required="required" v-model="bc_price">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-2">
+                                        <label for="xsfzr">病人姓名</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="validationCustom05"
+                                                   placeholder="病人姓名" name="leader" required="required" v-model="bc_leader">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-2">
+                                        <label for="validationCustom04">备注</label>
+                                        <div class="input-group">
+                                            <textarea rows="5" name="beizhu" class="form-control" id="validationCustom04" placeholder="备注"
+                                                      v-model="bc_remarks"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="add_xsd_btn btn btn-primary mt-4 d-block w-100" type="button" @click="add">添加</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- SCRIPTS -->
+<!-- Global Required Scripts Start -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="http://cdn.bootstrapmb.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="../assets/js/perfect-scrollbar.js"> </script>
+<script src="../assets/js/jquery-ui.min.js"> </script>
+<!-- Global Required Scripts End -->
+
+<!-- Page Specific Scripts Start -->
+<script src="../assets/js/moment.js"> </script>
+<script src="../assets/js/jquery.webticker.min.js"> </script>
+<!--  <script src="../assets/js/Chart.bundle.min.js"> </script>-->
+<!--  <script src="../assets/js/Chart.Financial.js"> </script>-->
+<!--  <script src="../assets/js/table-line.js"> </script>-->
+<!--  <script src="../assets/js/index-chart.js"> </script>-->
+
+<script src="../assets/js/d3.v3.min.js"> </script>
+<script src="../assets/js/topojson.v1.min.js"> </script>
+<!--  <script src="../assets/js/datamaps.all.min.js"> </script>-->
+<!--  <script src="../assets/js/index-map.js"> </script>-->
+
+
+
+
+
+
+<!-- Page Specific Scripts End -->
+
+<!-- Greendash core JavaScript -->
+<script src="../assets/js/framework.js"></script>
+
+<!-- Settings -->
+<script src="../assets/js/settings.js"></script>
+<script src="../assets/js/vue.js"></script>
+<script src="../assets/js/axios.min.js"></script>
+
+
+
+<script type="text/javascript">
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            usrname:'',
+            bcList:[],
+            bc_name:'',
+            bc_time:'',
+            bc_leader:'',
+            bc_price:'',
+            bc_remarks:'',
+            status:'1'
+        },
+        methods: {
+            logout:function(){
+                if(confirm("是否确定要退出?")) {
+                    //销毁localstorage中的内容
+                    localStorage.clear();
+                    //跳转到登录页
+                    window.location.reload();
+                }
+            },
+            add:function(){
+                //发送请求 给后端
+                axios.post('http://localhost:8080/bc/add',`bc_name=${this.bc_name}&bc_time=${this.bc_time}&bc_leader=${this.bc_leader}&bc_price=${this.bc_price}&bc_remarks=${this.bc_remarks}&s=${this.clear}}`).then(
+                    response => {
+                        if(response.data.code==200){//登录成功 ,里面一定有带过来的user response.data.data
+                            alert('添加成功');
+                            window.location.reload();
+
+                        }else{
+                            alert(response.data.msg);
+
+                        }
+
+                    },
+                    error => {console.log('失败了',error);}
+                )
+
+            },
+        },
+
+        created() {
+            //从localStorage取出来  var aa = {"id":10,"name":"aa"}
+            var userJsonStr = localStorage.getItem("user");
+
+            if(userJsonStr != null){
+                //转换为json对象 {id:10,name:"aa"}
+                var userObj = $.parseJSON(userJsonStr);
+                this.username = userObj.name;
+
+
+                //发送ajax请求
+                axios.get('http://localhost:8080/bc/query').then(
+                    response => {
+                        this.bcList=response.data.data;
+                    },
+                    error => {console.log('请求失败了',error);}
+                )
+
+
+            }else{
+                location.href = "./login.html";
+            }
+
+        }
+
+    })
+
+
+</script>
+
+
+
+</body>
+
+</html>

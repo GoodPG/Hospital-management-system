@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxa.mapper.BuyMapper">
+    <insert id="insert" parameterType="buyinformation">
+        INSERT INTO t_buy(number,time,money,people,psbuy,status)
+        VALUES (#{number},#{time},#{money},#{people},#{psbuy},#{status})
+    </insert>
+    <update id="update" >
+        UPDATE t_buy
+        SET status=0
+        WHERE id=#{id}
+    </update>
+    <select id="queryAll" resultType="buyinformation">
+        SELECT * FROM t_buy WHERE status=1
+    </select>
+    <select id="queryByName" resultType="buyinformation">
+        SELECT * FROM t_buy WHERE people like '%${search}%'
+    </select>
+
+</mapper>

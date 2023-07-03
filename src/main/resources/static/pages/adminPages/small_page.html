@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!--重置样式-->
+    <link href="static/css/reset.css" rel="stylesheet">
+    <!--幻灯片-->
+    <link href="static/css/hwslider.css" rel="stylesheet">
+    <!--bootstrap css 文件-->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+    <!--字体 -->
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <!--自定义 -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <title>Title</title>
+    <style>
+        .button1{
+            height:30px;
+            width:100px;
+            font-size:20px;
+        }
+        .doctor li{
+            display:inline;
+        }
+
+        #title{
+            text-align: center;
+        }
+        #div2{
+            width:500px;
+            height:500px;
+            position:absolute;
+            left:50%;
+        }
+        #div4{
+            position:absolute;
+            left:5%;
+            top:90%;
+        }
+        .list{
+            position:absolute;
+            left:50%;
+            top:80%;
+        }
+        .li{
+            width:500px;
+        }
+        .lt{
+            float:left;
+        }
+        .ltime{
+            float:right;
+        }
+        .title2{
+            position:absolute;
+            left:50%;
+            top:76%;
+        }
+        .more{
+            position:absolute;
+            left:72%;
+            top:73%;
+        }
+        img{
+            weight:200px;
+            height:300px;
+        }
+        .img{
+            position:absolute;
+            left:5%;
+
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- 移动端导航图标 -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Hospital</a>
+        </div>
+        <!-- 导航-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">首页 <span class="sr-only"></span></a></li>
+                <li><a href="http://localhost:8080/pages/login.html">后台登录/注册</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--幻灯片-->
+<div class="page-title">
+    <div class="container">
+    </div>
+</div>
+<br><br>
+<!--图片-->
+<div id="div1">
+    <div id="title"><h2 >急诊科室介绍</h2></div><br>
+<div class="img" id="img">
+    <img src="static/images/科室1.jpg">
+</div>
+<!--    介绍-->
+    <div id="div2">
+        <div class="title1"><h4>简介</h4></div>
+<br>
+    <div class="jieshao" >&nbsp; &nbsp; &nbsp; &nbsp;华西急诊始于上个世纪50年代，经过几代人的励精图治、耕耘奉献和孜孜追求，终于从完成简单中转功能的“急诊室”成长为具有急危重患者全方位紧急救护能力的现代化“急诊科”，于2012年成功获批卫生部国家临床重点专科建设项目，并于2018年顺利通过国家卫生健康委员会国家临床重点专科总结评估。连续五年获中国医学科学院医学信息研究所《中国医院科技影响力排行榜》急诊医学学科第一名和复旦大学医院管理研究所《中国医院最佳专科声誉排行榜》第二名。</div>	        			</div>
+
+    <div id="div3">
+        <div class="title2"><h4>科室动态</h4></div>
+        <div class="more"><a href="#">了解更多</a></div>
+        <div class="list">
+            <div class="li">
+                <a href="#" target="_blank" class="clear">
+                    <div class="lt">华西急诊就诊指南</div>
+                    <div class="ltime">2019.06.17</div>
+                </a>
+            </div><div class="li">
+            <a href="#" target="_blank" class="clear">
+                <div class="lt">急诊科一党支部、急诊科二党支部联合开展“追光计...</div>
+                <div class="ltime">2023.06.26</div>
+            </a>
+        </div><div class="li">
+            <a href="#" target="_blank" class="clear">
+                <div class="lt">急诊科二党支部多形式深化“学习贯彻习近平新时代...</div>
+                <div class="ltime">2023.06.14</div>
+            </a>
+        </div>
+    </div>
+</div>
+    </div>
+
+</body>
+</html>

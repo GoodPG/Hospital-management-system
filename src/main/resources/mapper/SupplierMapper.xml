@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxa.mapper.SupplierMapper">
+    <insert id="insert" parameterType="supplier">
+        INSERT INTO t_supplier(name,address,link,phone,code,fax,email,status)
+        VALUES (#{name},#{address},#{link},#{phone},#{code},#{fax},#{email},#{status})
+    </insert>
+    <update id="update" >
+        UPDATE t_supplier
+        SET status=0
+        WHERE id=#{id}
+    </update>
+    <select id="queryAll" resultType="supplier">
+        SELECT * FROM t_supplier WHERE status=1
+    </select>
+    <select id="queryByName" resultType="supplier">
+        SELECT * FROM t_supplier WHERE name like '%${search}%'
+    </select>
+</mapper>

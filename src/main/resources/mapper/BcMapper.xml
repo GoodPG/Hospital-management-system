@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxa.mapper.BcMapper">
+    <select id="queryAll" resultType="com.gxa.entity.bc">
+SELECT * FROM t_bc where status=1
+    </select>
+    <insert id="insert" parameterType="com.gxa.entity.bc">
+        INSERT INTO t_bc(bc_name,bc_time,bc_price,bc_leader,bc_remarks,status)
+        VALUES (#{bc_name},#{bc_time},#{bc_price},#{bc_leader},#{bc_remarks},#{status})
+    </insert>
+    <update id="update" >
+        UPDATE t_bc
+        SET status=0
+        WHERE id=#{id}
+    </update>
+
+
+
+</mapper>

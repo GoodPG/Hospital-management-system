@@ -1,0 +1,96 @@
+.hwslider {
+    width: 100%;
+    height: auto;
+    min-width: 280px;
+    min-height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hwslider ul {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1
+}
+
+.hwslider ul li {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hwslider ul li.active {
+    display: block;
+}
+
+.hwslider ul li img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    min-width: 60px;
+    height: 12px;
+    z-index: 2;
+}
+
+.dots span {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.dots span.active {
+    background: orangered
+}
+
+.arr {
+    display: none;
+    position: absolute;
+    top: 140px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    ;
+    font-size: 36px;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    text-decoration: none
+}
+
+.arr:hover {
+    background: rgba(0, 0, 0, .7);
+    text-decoration: none;
+}
+
+.hwslider:hover .arr {
+    display: block;
+    text-decoration: none;
+    color: #fff
+}
+
+.prev {
+    left: 20px
+}
+
+.next {
+    right: 20px
+}

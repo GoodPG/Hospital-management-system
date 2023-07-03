@@ -1,0 +1,119 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+figure,
+span figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+i {
+    font-style: normal;
+}
+
+ol,
+li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: '微软雅黑'
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.pin li {
+    display: inline-block;
+}
+
+.clearfix {
+    overflow: auto;
+    _height: 1%
+}
+
+.cont {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p50 {
+    padding: 50px 0;
+}
+
+.p30 {
+    padding: 30px 0;
+}
